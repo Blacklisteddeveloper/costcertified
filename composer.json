@@ -1,0 +1,24 @@
+{
+	"name": "costcertified",
+	"type": "App Project",
+	"license": "MIT",
+	"description": "",
+	"homepage": "https://github.com/Blacklisteddeveloper/costcertified",
+	"authors": [
+		{
+			"name": "Inderdeep singh",
+			"email": "blacklisted.web02@gmail.com",
+			"homepage": "https://github.com/Blacklisteddeveloper/costcertified"
+		}
+	],
+	"keywords": [
+		"wordpress"
+	],
+	"support": {
+		"issues": "https://github.com/Blacklisteddeveloper/costcertified/issues"
+	},
+	"require": {
+		"php": ">=5.4.0",
+		"composer/installers": "~1.0"
+	}
+}
