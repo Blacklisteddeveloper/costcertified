@@ -2,8 +2,12 @@
 /* FONTS
 ---------------------------------- */
 
-@include font-face("heading-bold", "../fonts/ProximaNovaAltBold");
-@include font-face("heading-semibold", "../fonts/ProximaNovaAltCondensedSemibold");
-@include font-face("content-font", "../fonts/ProximaNovaAltRegular");
-@include font-face("heading-midbold", "../fonts/ProximaNovaSemibold");
-@include font-face("heading-thin", "../fonts/ProximaNovaThin");
+@include font-face("Gotham-Black", "../fonts/Gotham-Black");
+@include font-face("Gotham-Bold", "../fonts/Gotham-Bold");
+@include font-face("Gotham-Book", "../fonts/Gotham-Book");
+@include font-face("Gotham-Light", "../fonts/Gotham-Light");
+@include font-face("Linearicons-Free", "../fonts/Linearicons-Free");
+@include font-face("raleway-black-webfont", "../fonts/raleway-black-webfont");
+@include font-face("raleway-bold-webfont", "../fonts/raleway-bold-webfont");
+@include font-face("raleway-regular-webfont", "../fonts/raleway-regular-webfont");
+@include font-face("raleway-semibold-webfont", "../fonts/raleway-semibold-webfont");
