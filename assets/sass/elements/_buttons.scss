@@ -1,0 +1,72 @@
+%btnlarge{
+	color: $white;
+    background: $mailcolor;
+    text-decoration: none;
+    padding: 21px 45px;
+    font-size: 25px;
+    border-radius: 23px;
+	font-family:$main-font;
+    letter-spacing: 2.75px;
+    font-weight: 600;
+    transition-property: background;
+	@include media($desktop-lg-max){
+		padding: 16px 34px;
+		font-size: 20px;
+		margin-top: 7px;
+	}
+    &:hover {
+      background: #303030;
+    }
+}
+
+%btnsmall{
+	color: $white;
+    background: $mailcolor;
+    text-decoration: none;
+    padding: 21px 45px;
+    font-size: 25px;
+    border-radius: 23px;
+	font-family:$main-font;
+    letter-spacing: 2.75px;
+	text-transform: uppercase;
+    font-weight: 600;
+    transition-property: background;
+	@include media($desktop-lg-max){
+		padding: 16px 35px;
+		font-size:21px;
+	}
+	@include media($mobile-slg){
+		padding: 10px 35px;
+		font-size: 16px;
+	}
+    &:hover {
+      background: #303030;
+    }
+}
+%txtbtn {
+	color: $mailcolor;
+	font-family:$main-font;
+	@include font-size(30);
+	
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: none;
+	border-radius: 3px;
+	background: #e11f26;
+	color: $white;
+	@include font-size(0.75);
+	line-height: 1;
+	padding: .6em 1em .4em;
+
+	&:hover {
+		border-color: #e4e4e4;
+	}
+
+	&:active,
+	&:focus {
+		border-color: #e4e4e4;
+	}
+}

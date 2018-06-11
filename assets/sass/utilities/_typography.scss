@@ -1,0 +1,9 @@
+
+/* FONTS
+---------------------------------- */
+
+@include font-face("heading-bold", "../fonts/ProximaNovaAltBold");
+@include font-face("heading-semibold", "../fonts/ProximaNovaAltCondensedSemibold");
+@include font-face("content-font", "../fonts/ProximaNovaAltRegular");
+@include font-face("heading-midbold", "../fonts/ProximaNovaSemibold");
+@include font-face("heading-thin", "../fonts/ProximaNovaThin");
