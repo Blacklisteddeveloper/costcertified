@@ -1,0 +1,102 @@
+.page-template-templatestemplate-pricing-php {
+	header {
+	    z-index: 2;
+	}
+	header .logo:before {
+	    background: #fad15c;
+	}
+}
+.pricing_page {
+	.pricing {
+		@include linear-gradient(#fad15c, #fde297);
+		@include padding(190px null 220px null );
+		position: relative;
+		.heading{
+			text-align: center;
+			h3 {
+				@include font-size(42);
+				@include margin(null null 7px null);
+			}
+			h2 {
+				@include margin(null null 130px null );
+				@include font-size(59);
+				font-family: Gotham-Ultra;
+			}
+		}
+		ul {
+			@include outer-container($king-ghidorah);
+			@include size(90%, null);
+			list-style: none;
+
+			li.small,li.big {
+				list-style: none;
+				float: left;
+				box-shadow: 0px 0px 38px #28282852;
+				@include size(33%,null);
+				background: #fff;
+				border-radius: 20px 20px 5px 5px;
+				position: relative;
+				@include margin(35px null null null);
+				@include padding(113px 50px 50px 50px );
+				.icon {
+					@include size(140px,140px);
+					@include position(absolute, $left:30%);
+    				margin-top:-178px;
+					img {
+
+					}
+				}
+				.heading {
+
+				}
+				ul {
+					list-style: none;
+					li {
+						list-style: none;
+						&:before {
+							content:'';
+							@include background(image,icon_list,png, no-repeat,0, 0,);
+						}
+					}
+				}
+				.price {
+					text-align: right;
+					span{
+
+					}
+					p {
+
+					}
+				}
+				.a {
+
+				}
+				&.big {
+					@include size(40%,null);
+					@include margin(0 -3% null -3%);
+					@include padding( 152px null null null );
+					z-index: 20;
+					.icon {
+						@include size(174px,174px);
+						margin-top:-234px;
+					}
+					span{
+
+					}
+					a{
+
+					}
+					.price {
+						text-align: right;
+						span{
+
+						}
+						p {
+
+						}
+					}
+				}
+			}
+		}
+	}
+}

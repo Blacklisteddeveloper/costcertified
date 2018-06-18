@@ -4303,7 +4303,8 @@ table {
 header {
   width: 100%;
   position: relative;
-  margin-top: 13px; }
+  margin-top: 13px;
+  float: left; }
   header .logo {
     width: 21%;
     float: left;
@@ -10552,6 +10553,81 @@ object {
     float: left;
     width: 59%;
     padding-top: 200px; }
+
+.page-template-templatestemplate-pricing-php header {
+  z-index: 2; }
+.page-template-templatestemplate-pricing-php header .logo:before {
+  background: #fad15c; }
+
+.pricing_page .pricing {
+  background: #fde297;
+  background: -moz-linear-gradient(top, #fad15c 0%, #fde297 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fad15c), color-stop(100%, #fde297));
+  background: -webkit-linear-gradient(right, #fad15c 0%, #fde297 100%);
+  background: -o-linear-gradient(left, #fad15c 0%, #fde297 100%);
+  background: linear-gradient(to right, #fad15c 0%, #fde297 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#fad15c, endColorstr=#fde297);
+  padding-top: 190px;
+  padding-bottom: 220px;
+  position: relative; }
+  .pricing_page .pricing .heading {
+    text-align: center; }
+    .pricing_page .pricing .heading h3 {
+      font-size: 42px;
+      margin-bottom: 7px; }
+    .pricing_page .pricing .heading h2 {
+      margin-bottom: 130px;
+      font-size: 59px;
+      font-family: Gotham-Ultra; }
+  .pricing_page .pricing ul {
+    content: "";
+    display: table;
+    table-layout: fixed;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    list-style: none; }
+    .pricing_page .pricing ul li.small, .pricing_page .pricing ul li.big {
+      list-style: none;
+      float: left;
+      box-shadow: 0px 0px 38px #28282852;
+      width: 33%;
+      background: #fff;
+      border-radius: 20px 20px 5px 5px;
+      position: relative;
+      margin-top: 35px;
+      padding: 113px 50px 50px; }
+      .pricing_page .pricing ul li.small .icon, .pricing_page .pricing ul li.big .icon {
+        width: 140px;
+        height: 140px;
+        position: absolute;
+        left: 30%;
+        margin-top: -178px; }
+      .pricing_page .pricing ul li.small ul, .pricing_page .pricing ul li.big ul {
+        list-style: none; }
+        .pricing_page .pricing ul li.small ul li, .pricing_page .pricing ul li.big ul li {
+          list-style: none; }
+          .pricing_page .pricing ul li.small ul li:before, .pricing_page .pricing ul li.big ul li:before {
+            content: '';
+            background-image: url(../image/icon_list.png);
+            background-repeat: no-repeat;
+            background-position: 0 0; }
+      .pricing_page .pricing ul li.small .price, .pricing_page .pricing ul li.big .price {
+        text-align: right; }
+      .pricing_page .pricing ul li.small.big, .pricing_page .pricing ul li.big.big {
+        width: 40%;
+        margin-top: 0;
+        margin-right: -3%;
+        margin-left: -3%;
+        padding-top: 152px;
+        z-index: 20; }
+        .pricing_page .pricing ul li.small.big .icon, .pricing_page .pricing ul li.big.big .icon {
+          width: 174px;
+          height: 174px;
+          margin-top: -234px; }
+        .pricing_page .pricing ul li.small.big .price, .pricing_page .pricing ul li.big.big .price {
+          text-align: right; }
 
 /* Pages
 	:: Pages

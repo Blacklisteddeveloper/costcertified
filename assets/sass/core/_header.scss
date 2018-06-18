@@ -2,6 +2,7 @@ header{
 	@include size(100%, null);
 	@include position(relative);
 	@include margin(13px null null null);
+	float: left;
 	.logo{
 		@include size(21%, null);
 		float: left;
