@@ -2,93 +2,43 @@ input, select, textarea {
 	text-shadow: none;
 	outline: none;
 }
-
-#{$all-text-inputs-focus} {
-  border: 0px solid #222628;
-	font-size: 20px;
-	color:$mailcolor;
-	border-radius: 8px;
-    margin-bottom: 29px;
-    width: 100%;
-    font-family: $main-font;
-    font-weight: bold;
-	@include padding(20px);
-	@include media($desktop-lg-large) {
+.form {
+	#{$all-text-inputs}, select {
+		font-size: 19px;
+		padding: 14px 18px;
+		border: 2px solid $grey;
+		color: $grey;
+		border-radius: 8px;
+	    margin-bottom: 29px;
+	    width: 48%;
+	    font-family: $raleway-regular-webfont;
+	    font-weight: bold;
 		@include padding(15px);
-		font-size: 16px;
-	}
-	@include media($desktop-md-mid) {
-		 margin-bottom: 18px;
-	}
-	&:focus,&:placeholder {
-		color:$mailcolor;
-	}
-	&::-webkit-input-placeholder {
-		color:$mailcolor;
-	}
-	 
-	&:-moz-placeholder { /* Firefox 18- */
-		color:$mailcolor;
-	}
-	 
-	&::-moz-placeholder {  /* Firefox 19+ */
-		color:$mailcolor;
-	}
-	 
-	&:-ms-input-placeholder {  
-		color:$mailcolor;
-	}
-}
-
-
-select {
-	border: 0px solid #222628;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"] {
-	&.wpcf7-not-valid{
-		color:red;
+		margin-right: 2%;
 		&:focus,&:placeholder {
-			color:red;
+			color:$grey;
 		}
 		&::-webkit-input-placeholder {
-			color:red;
+			color:$grey;
 		}
 		 
 		&:-moz-placeholder { /* Firefox 18- */
-			color:red;
+			color:$grey;
 		}
 		 
 		&::-moz-placeholder {  /* Firefox 19+ */
-			color:red;
+			color:$grey;
 		}
 		 
 		&:-ms-input-placeholder {  
-			color:red;
+			color:$grey;
 		}
 	}
 
-	
 }
 
-textarea {
-	@include size(100%,62px);
-    margin-bottom: 15px;
-}
+
+
 
 
 

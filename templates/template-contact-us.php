@@ -11,16 +11,12 @@ get_header(); ?>
 <section class="contact_us">
 	<section class="about_content">
 		<div class="heading">
-			<h3>The Story of CostCertified™</h3>
-			<h2>About US</h2>
+			<h3>Want a demo? Need to talk?</h3>
+			<h2>Get in touch with us today.</h2>
 		</div>
-		<div class="image"><img src="<?php bloginfo('template_url'); ?>/assets/image/about_txt.png" title="" /></div>
-		<div class="content">
-			<h2>CostCertified™ was born out of a strong need in the marketplace for contractors to be able to provide real-time, consistent, reliable and accurate quotes for all jobs both large and small.</h2>
-			<p>In order for any construction or renovation company to grow they need to find a way to accurately quote jobs.</p>
-			<p>Not having a great system in place can cost the company time and money. Not to mention, poorly estimated jobs can result in unhappy customers. CostCertified™ is more than just a software tool.</p>
-			<p>It is a new industry standard whereby the contractor or construction company is CostCertified™ meaning they have been trained and approved to use the CostCertified™ quoting app and bear our seal of approval on all quotes/estimates.</p>
-			<div><a href="#" class="borderbtn">CONTACT US</a></div>
+		<div class="image"><img src="<?php bloginfo('template_url'); ?>/assets/image/contact_txt.png" title="" /></div>
+		<div class="form">
+			<?php echo do_shortcode('[contact-form-7 id="46" title="Contact form 1"]');?>
 		</div>
 	</section>
 </section>
