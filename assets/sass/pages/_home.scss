@@ -1,0 +1,310 @@
+.homepage {
+	.banner{
+		@include outer-container($betelgeuse);
+		@include size(90%, null);
+		.heading{
+			text-align: center;
+			@include margin(81px null -62px null );
+			h3 {
+				@include font-size(43);
+				@include margin(null null 7px null );
+				
+			}
+			h2 {
+				@include margin(null null 34px null );
+				@include font-size(60);
+			}
+			a{
+				@include font-size(19);
+				i{
+					
+					@include size(113px, 113px);
+					display: inline-block;
+					@extend %gradient_btn;
+					border-radius: 100%;
+					margin-bottom: 10px;
+					@include position(relative);
+					&:after {
+						@include background(image,playbtn,png, no-repeat,56%, 56%, );
+						content:'';
+						@include size(100%, 100%);
+						@include position(absolute, $left:1px);
+					}
+				}
+			}
+			span{
+				display: block;
+				font-family: $main-font-light;
+			}
+		}
+		.banner-txt{
+			@include size(40%,null);
+			.text{
+				width: 50%;
+				.title{
+					@include font-size(28);
+					color:$midgrey;
+					line-height: 41px;
+    				margin-bottom: 28px;
+				}
+				p{
+					color:$lightgrey;
+					@include font-size(23);
+					font-family: $main-font-light;
+					margin-bottom: 28px;
+					strong {
+
+					}
+				}
+				a.gradientbtn{
+					@extend %gradientbtn;
+				}
+				.borderbtn{
+					@extend %borderbtn;
+				}
+				.largebtn {
+					@extend %purplebtn;
+				}
+			}
+			
+			img {
+
+			}
+			&.left {
+				float: left;
+				.text{
+					float: left;
+					text-align: left;
+				}
+				p{
+					text-align: left;
+					strong {
+
+					}
+				}
+				img {
+					float: right;
+				}
+			}
+			&.right {
+				float: right;
+				.text{
+					float: right;
+					text-align: right;
+				}
+				p{
+					text-align: right;
+					strong {
+
+					}
+				}
+				img {
+					float: left;
+				}
+			}
+		}
+	}
+	.services{
+		@include outer-container($kaiju);
+		@include size(90%, null);
+		@include margin(232px null 101px null );
+		.heading{
+			text-align: center;
+			h3 {
+				@include font-size(43);
+				@include margin(null null 7px null );
+			}
+			h2 {
+				@include margin(null null 84px null );
+				@include font-size(60);
+			}
+		}
+		.list{
+			display: table;
+			li{
+				width: 46.5%;
+			    margin-bottom: 100px;
+			    box-shadow: 0px 0px 38px #28282852;
+			    list-style: none;
+			    float: left;
+			    height: 450px;
+			    padding: 20px;
+    			display: table;
+    			border-radius: 12px;
+			    text-align: center;
+			    .content{
+			    	vertical-align: middle;
+					display: table-cell;
+			    	.head{
+						font-size: 30px;
+    					margin-bottom: 25px;
+					}
+					.image {
+						@include size(100%, 249px);
+						
+					}
+					p{
+						font-size: 20px;
+						margin-top: 13px;
+    					margin-bottom: 0;
+					}
+
+			    }
+				
+				&:nth-child(2n+2){
+					margin-left:7%;
+				}
+				&:nth-child(3n){
+					.image{
+						img {
+							padding-top: 8%;
+						}
+					}
+					
+				};
+			}
+		}
+	}
+	.demobox{
+		@include linear-gradient($green, #34b17f);
+		@include padding(100px null 100px null );
+		@include clearfix;
+		.itmeansbox{
+			float: left;
+   			width: 29%;
+   			@include font-size(25);
+   			color:$white;
+   			padding: 0 3%;
+   			h3 {
+   				@include font-size(63);
+   				color:$white;
+   				margin-bottom: 20px;
+   				opacity: 0.7;
+   			}
+   			P{
+   				line-height: 40px;
+   				margin-bottom: 46px;
+   			}
+   			ul{
+   				margin-bottom: 56px;
+   				li{
+   					list-style: none;
+   					font-family: $main-font;
+   					position: relative;
+    				margin-bottom:19px;
+    				line-height: 39px;
+   					&:after{
+   						@include background(image,icon,png, no-repeat,0%, 0%, );
+   						content:'';
+   						width: 11px;
+					    height: 17px;
+					    float: left;
+					    position: absolute;
+					    left: -23px;
+					    top: 13px;
+   					}
+   				}
+   			}
+   			.seprater {
+   				@include background(image,shadow,png, no-repeat,center, center, );
+   				@include size(106%, 48px);
+			    MARGIN: 150px -3% 0;
+   			}
+   			.button {
+   				@extend %borderbtn_small;
+   			}
+   			&.right {
+   				.seprater{
+   					MARGIN:203px -3% 22px -18%;
+   				}
+   			}
+   			&.left {
+   				margin-top:100px;
+   				h3{
+   					font-family: Gotham-Ultra;
+   				}
+   			}
+		}
+		.bookdemo{
+			float: left;
+    		width: 40%;
+    		margin: 0 1%;
+    		@include linear-gradient-bottom(#ececec, #fff);
+			padding: 80px 50px 120px 50px;
+			text-align: center;
+			box-shadow: 0px 0px 38px #28282852;
+			border-radius: 20px;
+			.heading{
+				text-align: center;
+				h3 {
+					font-size: 32px;
+    				margin-top: 9px;
+				}
+				h2 {
+					@include font-size(59);
+					font-family: Gotham-Ultra;
+				}
+				P{
+					@include font-size(22);
+					@include padding(127px 10px);
+					line-height: 38px;
+				}
+			}
+		}
+	}
+	.calltoaction{
+		text-align: center;
+		@include outer-container($king-ghidorah);
+		@include size(90%, null);
+		@include padding(60px null 60px null );
+		position: relative;
+		&:before {
+			@include background(image,circele_line,png, no-repeat,bottom, center, );
+			content:'';	
+			@include size(100%, 100%);
+			opacity: 0.3;
+    		z-index: -1;
+			@include position(absolute, $top:0, $left:0);
+		}
+		h3{
+			font-family: Gotham-Ultra;
+			@include font-size(59);
+			color:$green;
+		}
+		p{
+			@include margin(43px null 44px null );
+			@include font-size(25);	
+			padding: 0 0%;
+			line-height: 38px;
+		}
+		a.arrow {
+			position: relative;
+			display: block;
+			&:after,&:before{
+				content:'';
+			}
+			&:after {
+				@include linear-gradient-bottom(#fff, #ececec);
+				@include size(50px, 50px);
+				position: absolute;
+			    margin-top: -13px;
+			    margin-left: -33px;
+			    z-index: -1;
+			    border-radius: 100%;
+			}
+			&:before{
+				@include background(image,arrow,png, no-repeat,center, center, );
+				@include size(68px, 23px);
+				display: inline-flex;
+			}
+
+		}
+		a.button {
+			margin-top: 47px;
+			@extend %regularbtn;
+		}
+	}
+	.client_testimonials {
+		@extend %testimonials;
+	}
+}

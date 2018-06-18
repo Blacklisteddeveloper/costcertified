@@ -11,7 +11,10 @@ textarea {
 	-webkit-font-smoothing: antialiased !important;
 
 }
-
+* {
+	margin:0;
+	padding: 0;
+}
 h1, h2, h3, h4, h5, h6,div.title {
 	clear: both;
 }
@@ -82,10 +85,6 @@ a {
 }
 h1,h2,h3,h4,h5,div.title{
 	font-family:$main-font;
-	letter-spacing: 3px;
-	@include media($mobile-md){
-		letter-spacing: 1px;
-	}
 }
 
 ul,li{

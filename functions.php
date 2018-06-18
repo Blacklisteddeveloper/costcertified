@@ -22,7 +22,6 @@ if ( ! function_exists( 'costcertified_setup' ) ) :
 		 * If you're building a theme based on costcertified, use a find and replace
 		 * to change 'costcertified' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'costcertified', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -122,7 +121,6 @@ add_action( 'widgets_init', 'costcertified_widgets_init' );
 function costcertified_scripts() {
 	wp_enqueue_style( 'costcertified-style', get_template_directory_uri() . '/assets/css/main.css' );
 
-	wp_enqueue_script( 'costcertified-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -157,3 +155,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function inline_svg($name) {
+	$file = get_template_directory();
+	$file .= "/assets/svg/" .$name .".svg";
+	include ($file);
+}

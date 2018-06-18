@@ -1,23 +1,86 @@
-%btnlarge{
-	color: $white;
-    background: $mailcolor;
-    text-decoration: none;
-    padding: 21px 45px;
-    font-size: 25px;
-    border-radius: 23px;
-	font-family:$main-font;
-    letter-spacing: 2.75px;
-    font-weight: 600;
-    transition-property: background;
-	@include media($desktop-lg-max){
-		padding: 16px 34px;
-		font-size: 20px;
-		margin-top: 7px;
-	}
+%gradient_btn{
+	@include linear-gradient($green, #34b17f);
     &:hover {
-      background: #303030;
+      @include linear-gradient(#34b17f ,$green);
     }
 }
+
+%gradientbtn {
+	@include linear-gradient($green, #34b17f);
+	color: $white;
+	font-size: 21px;
+	border-radius: 10px;
+	padding: 16px 42px;
+	display: inline-block;
+	font-family:$raleway-regular-webfont;
+    &:hover {
+      @include linear-gradient(#34b17f ,$green);
+    }
+}
+
+%borderbtn{
+	border: 2px solid $grey;
+	color: $grey;
+	font-size: 21px;
+	border-radius: 10px;
+	margin-top: 15px;
+	padding: 14px 18px;
+	display: inline-block;
+	font-family:$main-font-semibold;
+    &:hover {
+     background:$grey;
+     color:$white;
+    }
+}
+
+
+%borderbtn_small{
+	border: 2px solid $white;
+	color: $white;
+	font-size: 19px;
+	border-radius: 10px;
+	margin-top: 15px;
+	padding: 14px 50px;
+	display: inline-block;
+	font-family:$main-font-semibold;
+    &:hover {
+     background:$white;
+     color:$green;
+    }
+}
+
+%purplebtn{
+	background: $purple;
+	color: $white;
+	font-size:22px;
+	border-radius: 10px;
+	margin-top: 40px;
+	padding: 22px 86px;
+	display: inline-block;
+	font-family:$main-font-semibold;
+    &:hover {
+     background:$green;
+     color:$white;
+    }
+}
+
+%regularbtn{
+	background: $green;
+	border:1px solid $green;
+	color: $white;
+	font-size:22px;
+	border-radius: 10px;
+	margin-top: 40px;
+	padding: 14px 50px;
+	display: inline-block;
+	font-family:$main-font-semibold;
+    &:hover {
+     background:transparent;
+     color:$green;
+    }
+}
+
+
 
 %btnsmall{
 	color: $white;

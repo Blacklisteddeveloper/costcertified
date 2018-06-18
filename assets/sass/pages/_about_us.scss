@@ -1,0 +1,100 @@
+.about_us {
+	.about_content {
+		@include outer-container($gipsy-danger);
+		@include size(90%, null);
+		@include padding(160px null 100px null);
+		.image {
+			float: left;
+			@include padding(null 100px null null);
+			img {
+
+			}
+		}
+		.content {
+			float: left;
+			@include size(44%, null);
+			@include padding(50px null null null);
+			h2 {
+				color:$mailcolor;
+				@include font-size(31);
+				opacity: 0.7;
+				font-family:$raleway-regular-webfont;
+				@include padding(null null 31px null);
+			}
+			p{
+				@include font-size(19);
+				opacity: 0.7;
+				line-height: 26px;
+			}
+			a {
+				@extend %borderbtn;
+			}
+			div{
+				text-align: center;
+			}
+		}
+	}
+	.about_time {
+		@include linear-gradient($yellow, #fde297);
+		@include padding(130px null 220px null );
+		position: relative;
+		.heading{
+			text-align: center;
+			h3 {
+				@include font-size(42);
+				@include margin(null null 7px null);
+			}
+			h2 {
+				@include margin(null null 60px null );
+				@include font-size(59);
+				font-family: Gotham-Ultra;
+			}
+		}
+		.time{
+			@include outer-container($gipsy-danger);
+			width: 100%;
+			background: #fff;
+			border-radius: 20px 20px 5px 5px;
+			position: relative;
+			@include padding(50px 50px 50px 50px );
+			li {
+				list-style: none;
+				@include size(29%, null);
+				float: left;
+				text-align: left;
+				position: relative;
+				@include margin(null 5% null null );
+				h3 {
+					@include font-size(25);
+					text-align: center;
+					font-family: Gotham-Ultra;
+					margin-bottom: 20px;
+				}
+				p{
+					@include font-size(19);
+					line-height: 25px;
+					
+				}
+				&:after {
+					content:'';
+					@include size(15px, 25px);
+					@include position(absolute, $top:5px, $right:-30px);
+					@include background(image,icon-right,png, no-repeat,left, center, );
+				}
+				&:nth-child(3n+3){
+					margin-right: 0;
+					&:after {
+						display:none;
+					}					
+				}
+			}
+			&:after {
+				content:'';
+				@include size(658px,490px);
+				float: left;
+				@include position(absolute, $bottom:-237px, $right:-324px);
+				@include background(image,bucket,png, no-repeat,left, center, );
+			}
+		}
+	}
+}

@@ -2,11 +2,13 @@
 /* FONT
 ---------------------------------- */
 
-$main-font: content-font;
-$main-font-bolder: heading-bold;
-$main-font-semibold: heading-semibold;
-$main-font-midbold: heading-midbold;
-$main-font-thin: heading-thin;
+$main-font: Gotham-Book;
+$main-font-bolder:Gotham-Bold;
+$main-font-semibold: raleway-semibold-webfont;
+$main-font-midbold: raleway-bold-webfont;
+$main-font-black: raleway-black-webfont;
+$raleway-regular-webfont: raleway-regular-webfont;
+$main-font-light: Raleway-Light;
 
 /* COLORS
 ---------------------------------- */
@@ -15,12 +17,44 @@ $main-font-thin: heading-thin;
 
 // Shades
 $white: #ffffff;
-$mailcolor: #4870f5;
-$dark-blue: #3253c3;
-$light-black:#333333;
+$mailcolor: #019277;
+$light-black:#484848;
 $black: #000000;
-$grey: #858585;
-$light-grey : #5e5e5e;
+$grey: #363d48;
+$midgrey: #576172;
+$lightgrey:#888888;
+
+$muted: #dee2e6;
+$default: #adb5bd;
+$invoice: #019277;	
+$project: #42b983;
+$booked: #99b369;
+$pending: #f0ad4e;
+$client: #e77647;
+$lead: #de3f3f;
+$dark: #656565;
+$light: #dbdbdb;
+$danger: #de3f3f;
+$warning: #facf58;
+$info: #15b797;
+$success: #42b983;
+$secondary: #613d7c;
+$primary: #019277;
+$black: #222;
+$gray: #656565;
+$white_grey: #f7faf9;
+$purple: #613d7c;
+$blue: #087fc5;
+$teal: #15b797;
+$green: #019277; 
+$yellow: #ffcc66;
+$orange: #f0ad4e;
+$red: #de3f3f;
+$gray: #868e96;
+$cyan: #17a2b8;
+$indigo: #6610f2;
+
+$green_l: #27efb0; 
 
 
 

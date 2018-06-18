@@ -1,0 +1,62 @@
+%testimonials {
+        @include margin(150px null 0px null );
+        
+        .heading{
+            text-align: center;
+            h3 {
+                @include font-size(42);
+                @include margin(null null 7px null );
+                color:$grey;
+                font-weight: normal;
+            }
+            h2 {
+                @include margin(null null null null );
+                @include font-size(60);
+                color:$mailcolor;
+                font-family: Gotham-Ultra;
+            }
+        }
+        .testimonials {
+            margin-top: 134px;
+            @include linear-gradient-bottom(#fff, #b9fce1);
+            ul{
+                @include outer-container($king-ghidorah);
+                width: 90%;
+                padding-bottom: 51px;
+                li{
+                    list-style: none;
+                    width: 50%;
+                    float: left;
+                    margin-bottom: 111px;
+                    .imagebox {
+                        @include size(154px, 154px);
+                        overflow: hidden;
+                        border-radius: 100%;
+                        border: 7px solid #eef2f0;
+                        float: left;
+                    }
+                    .content {
+                        @include size(58%, null);
+                        padding: 15px 0 0 18px;
+                        float: left;
+                        p{
+                            padding: 0;
+                            margin: 0;
+                            @include font-size(16);
+                            line-height: 23px;
+                        }
+                        span{
+                            border-top: 1px solid #1480c4;
+                            color:#1480c4;
+                            @include size(100%, null);
+                            float: left;
+                            @include font-size(16px);
+                            padding: 5px 0px;
+                            margin-top: 7px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }

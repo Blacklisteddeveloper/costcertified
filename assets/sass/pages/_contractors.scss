@@ -1,0 +1,330 @@
+.contractors {
+	.banner{
+		@include outer-container($betelgeuse);
+		@include size(90%, null);
+		.heading{
+			text-align: center;
+			@include margin(81px null 0px null );
+			h3 {
+				@include font-size(40);
+				@include margin(null null 7px null );
+				
+			}
+			h2 {
+				@include margin(null null 55px null );
+				@include font-size(59);
+				font-family: Gotham-Ultra;
+			}
+			.banner-img {
+				@include outer-container($king-ghidorah);
+				@include size(90%, null);
+			}
+			a.button {
+				margin-top: 47px;
+				@extend %regularbtn;
+			}
+			span{
+				display: block;
+				font-family: $main-font-light;
+			}
+		}
+	}
+	.marketplace{
+		@include size(100%, null);
+		background:#f7fbf9;
+		@include padding(95px null 131px null );
+		@include margin(152px null 7px null );
+		position: relative;
+		&:after,&:before {
+			content:'';
+		}
+		&:after {
+			@include background(image,shadow_top,png, no-repeat,center, center, );
+		    @include size (100%,  58px);
+		    float: left;
+		    @include position(absolute, $top:-6px);
+		}
+		&:before {
+			@include background(image,shadow_bottom,png, no-repeat,center, center, );
+			@include size (100%,  58px);
+		    float: left;
+		    @include position(absolute, $bottom:-53px);
+		}
+		.heading{
+			text-align: center;
+			h3 {
+				@include font-size(40);
+				@include margin(null null 7px null );
+				
+			}
+			h2 {
+				@include margin(null null 105px null );
+				@include font-size(59);
+				font-family: Gotham-Ultra;
+			}
+			ul {
+				@include outer-container($clover);
+				width: 100%;
+				li {
+					
+					&:after {	
+						content: '';
+						transition: all 0.3s;
+					    @include size(100%, 0%);
+					    position: absolute;
+					    left: 0;
+					    bottom: 0;
+					    border-radius: 20px;
+					    background: red;
+					    z-index: 1;
+					}
+					&:nth-child(1) {
+						&:after {
+							background: rgba($red, 0.3);
+						}
+					}
+					&:nth-child(2) {
+						&:after {
+							background: rgba($yellow, 0.3);
+						}
+					}
+					&:nth-child(3) {
+						&:after {
+							background: rgba($green_l, 0.3);
+						}
+					}	
+					list-style: none;
+					@include size(28%, null);
+					text-align: center;
+					@include margin(0 2.5%);
+					float:left;
+					position: relative;
+					.icon {
+						z-index: 2;
+						position: relative;
+						img {
+							@include size(174px, 174px);
+						}
+					}
+					h3 {
+						@include font-size(25);
+						color:$light-black;
+						@include padding(29px 25px 37px 25px );
+						font-family: $raleway-regular-webfont;
+						font-weight: 200;
+						margin-bottom: 0;
+						z-index: 2;
+						position: relative;
+					}
+					p{
+						@include font-size(18);
+						@include padding(null 25px 10px 25px );
+						z-index: 2;
+						position: relative;
+					}
+					&:hover {
+						
+						&:after{
+							transition: all 0.3s;
+							@include size(100%, 80%);
+						}
+					}
+				}
+			}
+		}
+	}
+	.quote_engine{
+		@include outer-container($kaiju);
+		@include size(90%, null);
+		@include margin(232px null 101px null );
+		.heading{
+			text-align: center;
+			h3 {
+				@include font-size(43);
+				@include margin(null null 7px null );
+			}
+			h2 {
+				@include margin(null null 84px null );
+				@include font-size(60);
+				font-family: Gotham-Ultra;
+			}
+		}
+	}
+	.job_done{
+		@include size(100%, null);
+		background:#f7fbf9;
+		@include padding(95px null 131px null );
+		@include margin(152px null 7px null );
+		position: relative;
+		&:after,&:before {
+			content:'';
+		}
+		&:before {
+			@include background(image,shadow_top,png, no-repeat,center, center, );
+		    @include size (100%,  58px);
+		    float: left;
+		    @include position(absolute, $top:-6px);
+		}
+		&:after {
+			@include background(image,circele_line,png, no-repeat,1%, center, );
+			@include size (20%,  100%);
+		    float: left;
+		    @include position(absolute, $bottom:-53px, $right:0,);
+	    	z-index: 1;
+		    opacity: 0.2;
+		}
+		.heading{
+			text-align: center;
+			h3 {
+				@include font-size(43);
+				@include margin(null null 7px null );
+			}
+			h2 {
+				@include margin(null null 84px null );
+				@include font-size(60);
+				font-family: Gotham-Ultra;
+			}
+		}
+		.list{
+			@include outer-container($king-ghidorah);
+			width: 100%;
+			li{
+				width: 48%;
+			    margin-bottom: 20px;
+			    box-shadow: 0px 0px 38px #28282852;
+			    list-style: none;
+			    float: left;
+			    height: 450px;
+			    padding: 20px;
+    			display: table;
+    			border-radius: 12px;
+			    text-align: center;
+			    .content{
+			    	vertical-align: middle;
+					display: table-cell;
+			    	.head{
+						font-size: 31px;
+    					color: $grey;
+    					font-family: $raleway-regular-webfont;
+						font-weight: 200;
+						@include margin(30px null null null);
+					}
+					.image {
+						
+						img {
+							@include size(115px, 115px);	
+						}
+						
+					}
+					p{
+						font-size: 19px;
+						margin-top: 13px;
+    					margin-bottom: 0;
+					}
+
+			    }
+				
+				&:nth-child(2n+2){
+					margin-left:2%;
+				}
+			}
+		}
+	}
+	.calltoaction{
+		@include linear-gradient($purple, #806396);
+		@include padding(50px null 50px null);
+		.container{
+			@include outer-container($gipsy-danger);
+			width: 100%;
+			.title {
+				float: left;
+				font-family: Gotham-Ultra;
+				color: $white;
+				.small {
+					@include font-size(25);
+					line-height: 20px;
+				}
+				.big{
+					@include font-size(107);
+					line-height: 93px;
+				}
+				.right {
+					margin-left: 80px;
+				}
+			}
+			.right_box {
+				float: right;
+			    width: 35%;
+			    margin-top: 93px;
+				span {	
+					font-size: 25px;
+					font-family: $raleway-regular-webfont;
+					font-weight: 200;
+					color: $white;
+				}
+				a.button {
+					margin-top: 20px;
+					display: block;
+    				text-align: center;
+					@extend %borderbtn_small;
+				}
+			}
+		}	
+		
+	}
+	.client_testimonials {
+		@extend %testimonials;
+	}
+	.star_company {
+		@include linear-gradient($yellow, #fde297);
+		@include padding(130px null 220px null );
+		position: relative;
+		&:after,&:before {
+			content:'';
+		}
+		&:before {
+			@include background(image,point-icon,png, no-repeat,left, center, );
+		    @include size (50%, 100%);
+		    float: left;
+		    @include position(absolute, $top:0,  $left:0);
+		}
+		&:after {
+			@include background(image,point-icon_r,png, no-repeat,right, center, );
+			@include size (50%, 100%);
+		    float: left;
+		    @include position(absolute, $top:0,  $right:0);
+		}
+		.heading{
+			text-align: center;
+			h3 {
+				@include font-size(42);
+				@include margin(null null 7px null);
+			}
+			h2 {
+				@include margin(null null 84px null );
+				@include font-size(59);
+				color:$white;
+				font-family: Gotham-Ultra;
+			}
+		}
+		.star_box {
+			@include outer-container($gipsy-danger);
+			width: 100%;
+			background: #fff;
+			border-radius: 100px 100px 20px 20px;
+			@include padding(57px null 57px null );
+			ul {	
+				text-align: center;
+				list-style: none;
+				li {
+					display: inline;
+					list-style: none;
+					padding: 0 5%;
+					img {
+
+					}
+				}
+			}	
+		}
+	}
+}

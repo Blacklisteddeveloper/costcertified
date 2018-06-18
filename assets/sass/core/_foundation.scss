@@ -11,10 +11,7 @@ html {
 body {
 	font-family:$main-font-midbold;
 	background: $white; /* Fallback for when there is no custom background color defined. */
-	@include media($short-xsm){
-		overflow: scroll !important;
-    	overflow-x: hidden !important;
-	}
+	
 }
 
 blockquote, q {
@@ -29,7 +26,6 @@ blockquote, q {
 h1 {
   margin:0 0;
 }
-
 hr {
 	background-color: #c0cacd;
 	border: 0;
